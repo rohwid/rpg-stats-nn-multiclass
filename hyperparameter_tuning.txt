@@ -1,0 +1,48 @@
+See the graph:
+tensorboard --logdir=tensorboard-dota2
+
+
+lr_0001_batch_size_16_1_epoc_10k
+Epoch 10000/10000
+0s 70us/step - loss: 0.1728 - accuracy: 0.9293 - val_loss: 0.8944 - val_accuracy: 0.5625
+
+                  Strength   Agility  Intelligent
+ArcWarden         0.024568  0.006935     0.968498
+Jakiro            0.017773  0.005565     0.976662
+WinterWyvern      0.015455  0.007855     0.976690
+Bloodseeker       0.088316  0.908255     0.003429
+Phoenix           0.343397  0.036987     0.619616
+Io                0.343291  0.037009     0.619700
+Leshrac           0.004960  0.061923     0.933117
+OutworldDevourer  0.004174  0.479194     0.516632
+Brewmaster        0.737918  0.247405     0.014677
+Tusk              0.071073  0.923097     0.005830
+Weaver            0.163470  0.365553     0.470978
+Undying           0.398514  0.027305     0.574181
+Alchemist         0.262933  0.254210     0.482858
+Phantom Lancer    0.031311  0.932167     0.036522
+CrystalMaiden     0.017773  0.005565     0.976661
+Invoker           0.017773  0.005565     0.976662
+
+
+lr_0001_batch_size_16_2_epoc_10k
+Epoch 10000/10000
+0s 103us/step - loss: 0.2259 - accuracy: 0.9192 - val_loss: 0.9298 - val_accuracy: 0.6875
+
+                  Strength   Agility  Intelligent
+ArcWarden         0.028572  0.019860     0.951567
+Jakiro            0.028572  0.019860     0.951569
+WinterWyvern      0.028572  0.019860     0.951569
+Bloodseeker       0.089090  0.907543     0.003367
+Phoenix           0.034700  0.026970     0.938330
+Io                0.028820  0.020132     0.951048
+Leshrac           0.028572  0.019860     0.951569
+OutworldDevourer  0.028572  0.019860     0.951569
+Brewmaster        0.869745  0.115788     0.014467
+Tusk              0.126240  0.868775     0.004985
+Weaver            0.004442  0.967560     0.027998
+Undying           0.337547  0.016118     0.646335
+Alchemist         0.793995  0.027620     0.178385
+Phantom Lancer    0.089130  0.907498     0.003372
+CrystalMaiden     0.028572  0.019860     0.951569
+Invoker           0.028572  0.019860     0.951569
