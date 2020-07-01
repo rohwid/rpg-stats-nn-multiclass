@@ -7,7 +7,7 @@ from keras.models import Model, Sequential
 from keras.layers import Input, Activation, Dense
 from keras.optimizers import SGD
 from keras.utils.np_utils import to_categorical
-from keras.callbacks import TensorBoard
+from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 
 
 sf_train = pd.read_csv('datasets/dota_2_training.csv')
@@ -49,43 +49,72 @@ model.compile(
 # Print model summary
 print(model.summary())
 
-# Use tensorBoard
-callbacks = TensorBoard(log_dir='./tensorboard-dota2')
+# All keras callbacks
+checkpoint = ModelCheckpoint(
+    filepath='./dota_2_hero_classification.h5',
+    monitor='val_loss',
+    verbose=0,
+    save_best_only=True,
+    mode='min'
+)
+
+early_stop = EarlyStopping(
+    monitor='val_loss',
+    min_delta=0.001,
+    patience=2000,
+    verbose=0,
+    mode='min',
+    restore_best_weights=True
+)
+
+reduce_lr = ReduceLROnPlateau(
+    monitor='val_loss',
+    factor=0.2,
+    patience=3,
+    verbose=0,
+    min_delta=0.001,
+    min_lr=0.0001
+)
+
+tf_board = TensorBoard(log_dir='./tensorboard')
+
+# Call the keras callbacks
+callbacks = [checkpoint, early_stop, reduce_lr, tf_board]
 
 # Train the model and use validation data
 history = model.fit(
     train_x, 
     train_y, 
     batch_size=16,
-    epochs=10000,
+    epochs=20000,
+    callbacks=callbacks,
     verbose=1,
-    validation_data=(val_x, val_y), 
-    callbacks=[callbacks]
+    validation_data=(val_x, val_y)
 )
 
-# List all data in history
-print(history.history.keys())
+#
+# History - Disabled because better to look at TensorBoard
+#
 
 # Summarize history for accuracy
-plt.plot(history.history['accuracy'])
-plt.plot(history.history['val_accuracy'])
-plt.title('model accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.show()
+# plt.plot(history.history['accuracy'])
+# plt.plot(history.history['val_accuracy'])
+# plt.title('model accuracy')
+# plt.ylabel('accuracy')
+# plt.xlabel('epoch')
+# plt.legend(['train', 'test'], loc='upper left')
+# plt.show()
 
 # Summarize history for loss
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.show()
+# plt.plot(history.history['loss'])
+# plt.plot(history.history['val_loss'])
+# plt.title('model loss')
+# plt.ylabel('loss')
+# plt.xlabel('epoch')
+# plt.legend(['train', 'test'], loc='upper left')
+# plt.show()
 
-# Save the weight
-model.save_weights('dota_2_hero_classification.h5')
+# Save the weight as json
 model_json = model.to_json()
 
 with open('dota_2_hero_classification.json', 'w') as json_file:
