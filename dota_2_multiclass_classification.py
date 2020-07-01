@@ -50,39 +50,40 @@ model.compile(
 print(model.summary())
 
 # Use tensorBoard
-callbacks = TensorBoard(log_dir='./tensorboard-dota2')
+callbacks = TensorBoard(log_dir='./tensorboard')
 
 # Train the model and use validation data
 history = model.fit(
     train_x, 
     train_y, 
     batch_size=16,
-    epochs=10000,
+    epochs=20000,
     verbose=1,
     validation_data=(val_x, val_y), 
     callbacks=[callbacks]
 )
 
-# List all data in history
-print(history.history.keys())
+#
+# History - Disabled because better to look at TensorBoard
+#
 
 # Summarize history for accuracy
-plt.plot(history.history['accuracy'])
-plt.plot(history.history['val_accuracy'])
-plt.title('model accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.show()
+# plt.plot(history.history['accuracy'])
+# plt.plot(history.history['val_accuracy'])
+# plt.title('model accuracy')
+# plt.ylabel('accuracy')
+# plt.xlabel('epoch')
+# plt.legend(['train', 'test'], loc='upper left')
+# plt.show()
 
 # Summarize history for loss
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.show()
+# plt.plot(history.history['loss'])
+# plt.plot(history.history['val_loss'])
+# plt.title('model loss')
+# plt.ylabel('loss')
+# plt.xlabel('epoch')
+# plt.legend(['train', 'test'], loc='upper left')
+# plt.show()
 
 # Save the weight
 model.save_weights('dota_2_hero_classification.h5')

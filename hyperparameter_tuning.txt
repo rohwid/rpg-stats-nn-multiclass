@@ -2,7 +2,33 @@ See the graph:
 tensorboard --logdir=tensorboard-dota2
 
 
-lr_0001_batch_size_16_1_epoc_10k
+
+[dota2_0]
+[lr: 0001, batch_size: 16, epoc: 10k]
+Epoch 10000/10000
+71us/step - loss: 0.1208 - accuracy: 0.9697 - val_loss: 0.9938 - val_accuracy: 0.6250
+                  Strength   Agility  Intelligent
+ArcWarden         0.009563  0.005395     0.985042
+Jakiro            0.009056  0.004618     0.986326
+WinterWyvern      0.006125  0.011727     0.982149
+Bloodseeker       0.024641  0.970109     0.005250
+Phoenix           0.100033  0.075751     0.824216
+Io                0.053518  0.035139     0.911343
+Leshrac           0.006120  0.011743     0.982137
+OutworldDevourer  0.054543  0.143766     0.801692
+Brewmaster        0.966273  0.023261     0.010466
+Tusk              0.061104  0.926772     0.012124
+Weaver            0.006466  0.980753     0.012781
+Undying           0.306004  0.003001     0.690995
+Alchemist         0.347432  0.098174     0.554394
+Phantom Lancer    0.015131  0.979257     0.005612
+CrystalMaiden     0.006131  0.011760     0.982110
+Invoker           0.006120  0.011743     0.982137
+
+
+
+[dota2_1]
+[lr: 0001, batch_size: 16, epoc: 10k]
 Epoch 10000/10000
 0s 70us/step - loss: 0.1728 - accuracy: 0.9293 - val_loss: 0.8944 - val_accuracy: 0.5625
 
@@ -25,24 +51,49 @@ CrystalMaiden     0.017773  0.005565     0.976661
 Invoker           0.017773  0.005565     0.976662
 
 
-lr_0001_batch_size_16_2_epoc_10k
-Epoch 10000/10000
-0s 103us/step - loss: 0.2259 - accuracy: 0.9192 - val_loss: 0.9298 - val_accuracy: 0.6875
 
+[dota2_2]
+[lr: 0001, batch_size: 16, epoc: 20k]
+Epoch 20000/20000
+66us/step - loss: 0.2176 - accuracy: 0.9697 - val_loss: 1.1186 - val_accuracy: 0.6250
                   Strength   Agility  Intelligent
-ArcWarden         0.028572  0.019860     0.951567
-Jakiro            0.028572  0.019860     0.951569
-WinterWyvern      0.028572  0.019860     0.951569
-Bloodseeker       0.089090  0.907543     0.003367
-Phoenix           0.034700  0.026970     0.938330
-Io                0.028820  0.020132     0.951048
-Leshrac           0.028572  0.019860     0.951569
-OutworldDevourer  0.028572  0.019860     0.951569
-Brewmaster        0.869745  0.115788     0.014467
-Tusk              0.126240  0.868775     0.004985
-Weaver            0.004442  0.967560     0.027998
-Undying           0.337547  0.016118     0.646335
-Alchemist         0.793995  0.027620     0.178385
-Phantom Lancer    0.089130  0.907498     0.003372
-CrystalMaiden     0.028572  0.019860     0.951569
-Invoker           0.028572  0.019860     0.951569
+ArcWarden         0.024430  0.070182     0.905388
+Jakiro            0.024430  0.070181     0.905389
+WinterWyvern      0.024442  0.070424     0.905134
+Bloodseeker       0.035873  0.962485     0.001642
+Phoenix           0.024430  0.070181     0.905389
+Io                0.024431  0.070184     0.905385
+Leshrac           0.024442  0.070434     0.905124
+OutworldDevourer  0.026605  0.179550     0.793845
+Brewmaster        0.928384  0.048640     0.022977
+Tusk              0.058623  0.938638     0.002739
+Weaver            0.022132  0.489180     0.488688
+Undying           0.071734  0.000331     0.927935
+Alchemist         0.471345  0.015816     0.512840
+Phantom Lancer    0.035823  0.962536     0.001640
+CrystalMaiden     0.024431  0.070185     0.905384
+Invoker           0.024430  0.070181     0.905389
+
+
+
+[dota2_3]
+[lr: 0001, batch_size: 16, epoc: 20k]
+Epoch 20000/20000
+68us/step - loss: 0.8218 - accuracy: 0.6061 - val_loss: 1.0663 - val_accuracy: 0.6250
+                  Strength   Agility  Intelligent
+ArcWarden         0.020577  0.320872     0.658551
+Jakiro            0.020577  0.320872     0.658551
+WinterWyvern      0.020577  0.320872     0.658551
+Bloodseeker       0.549268  0.347074     0.103658
+Phoenix           0.020577  0.320872     0.658551
+Io                0.020577  0.320872     0.658551
+Leshrac           0.020577  0.320872     0.658551
+OutworldDevourer  0.020577  0.320872     0.658551
+Brewmaster        0.549268  0.347074     0.103658
+Tusk              0.549268  0.347074     0.103658
+Weaver            0.020577  0.320872     0.658551
+Undying           0.549273  0.347070     0.103657
+Alchemist         0.549268  0.347074     0.103658
+Phantom Lancer    0.549279  0.347059     0.103663
+CrystalMaiden     0.020577  0.320872     0.658551
+Invoker           0.020577  0.320872     0.658551
