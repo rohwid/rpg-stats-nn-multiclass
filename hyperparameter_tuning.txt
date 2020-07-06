@@ -98,26 +98,25 @@ Invoker           0.110220  0.183580     0.706200
 main: [lr: 0.001, batch_size: 16]
 early_stop: [min_delta: 0.001, patience: 2000]
 
-Epoch 7600/20000
-74us/step - loss: 0.7208 - accuracy: 0.7980 - val_loss: 0.8833 - val_accuracy: 0.7500
+Epoch 7733/20000
+105us/step - loss: 0.5478 - accuracy: 0.8990 - val_loss: 0.8555 - val_accuracy: 0.7500
 
-Epoch 9600/20000
-69us/step - loss: 0.7006 - accuracy: 0.7980 - val_loss: 0.8992 - val_accuracy: 0.6875
-
+Epoch 10733/20000
+70us/step - loss: 0.4903 - accuracy: 0.8990 - val_loss: 0.8597 - val_accuracy: 0.7500
                   Strength   Agility  Intelligent
-ArcWarden         0.064683  0.288473     0.646843
-Jakiro            0.064683  0.288474     0.646842
-WinterWyvern      0.076154  0.327500     0.596346
-Bloodseeker       0.277988  0.543397     0.178615
-Phoenix           0.064683  0.288473     0.646843
-Io                0.064683  0.288473     0.646843
-Leshrac           0.064683  0.288473     0.646843
-OutworldDevourer  0.064684  0.288475     0.646841
-Brewmaster        0.609416  0.281516     0.109068
-Tusk              0.463649  0.393960     0.142392
-Weaver            0.064683  0.288473     0.646843
-Undying           0.610753  0.280500     0.108746
-Alchemist         0.603336  0.286137     0.110526
-Phantom Lancer    0.273612  0.547038     0.179350
-CrystalMaiden     0.064683  0.288473     0.646843
-Invoker           0.064683  0.288473     0.646843
+ArcWarden         0.053558  0.206808     0.739634
+Jakiro            0.205992  0.241550     0.552458
+WinterWyvern      0.205992  0.241552     0.552456
+Bloodseeker       0.161604  0.760779     0.077617
+Phoenix           0.053562  0.206812     0.739627
+Io                0.053558  0.206813     0.739629
+Leshrac           0.053559  0.206871     0.739570
+OutworldDevourer  0.205848  0.245712     0.548440
+Brewmaster        0.624197  0.189504     0.186300
+Tusk              0.377984  0.510914     0.111102
+Weaver            0.098899  0.560487     0.340614
+Undying           0.645770  0.127254     0.226976
+Alchemist         0.643663  0.126769     0.229569
+Phantom Lancer    0.154832  0.768835     0.076333
+CrystalMaiden     0.053558  0.206809     0.739633
+Invoker           0.053558  0.206809     0.739633
