@@ -4,7 +4,8 @@ tensorboard --logdir=tensorboard-dota2
 
 
 [dota2_0]
-[lr: 0001, batch_size: 16, epoc: 10k]
+[lr: 0001, batch_size: 16]
+
 Epoch 10000/10000
 71us/step - loss: 0.1208 - accuracy: 0.9697 - val_loss: 0.9938 - val_accuracy: 0.6250
                   Strength   Agility  Intelligent
@@ -28,7 +29,8 @@ Invoker           0.006120  0.011743     0.982137
 
 
 [dota2_1]
-[lr: 0001, batch_size: 16, epoc: 10k]
+[lr: 0001, batch_size: 16]
+
 Epoch 10000/10000
 0s 70us/step - loss: 0.1728 - accuracy: 0.9293 - val_loss: 0.8944 - val_accuracy: 0.5625
 
@@ -53,7 +55,8 @@ Invoker           0.017773  0.005565     0.976662
 
 
 [dota2_2]
-[lr: 0001, batch_size: 16, epoc: 20k]
+[lr: 0001, batch_size: 16]
+
 Epoch 20000/20000
 66us/step - loss: 0.2176 - accuracy: 0.9697 - val_loss: 1.1186 - val_accuracy: 0.6250
                   Strength   Agility  Intelligent
@@ -77,7 +80,8 @@ Invoker           0.024430  0.070181     0.905389
 
 
 [dota2_3]
-[lr: 0001, batch_size: 16, epoc: 20k]
+[lr: 0001, batch_size: 16]
+
 Epoch 20000/20000
 68us/step - loss: 0.8218 - accuracy: 0.6061 - val_loss: 1.0663 - val_accuracy: 0.6250
                   Strength   Agility  Intelligent
