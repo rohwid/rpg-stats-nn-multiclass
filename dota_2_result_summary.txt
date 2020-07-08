@@ -7,7 +7,9 @@ tensorboard --logdir='tensorboard_directory'
 
 [dota2_0]
 [lr: 0.001, batch_size: 16]
+
 early_stop: [min_delta: 0, patience: 1500]
+
 Epoch 8617/20000
 70us/step - loss: 0.4635 - accuracy: 0.9091 - val_loss: 0.7774 - val_accuracy: 0.6875
 
@@ -36,6 +38,7 @@ Invoker           0.116429  0.100315     0.783257
 
 [dota2_1]
 main: [lr: 0.001, batch_size: 16]
+
 early_stop: [min_delta: 0, patience: 1500]
 
 Epoch 6513/20000
@@ -66,6 +69,7 @@ Invoker           0.080211  0.248405     0.671384
 
 [dota2_2]
 main: [lr: 0.001, batch_size: 16]
+
 early_stop: [min_delta: 0.001, patience: 2000]
 
 Epoch 5713/20000
@@ -96,6 +100,7 @@ Invoker           0.110220  0.183580     0.706200
 
 [dota2_3]
 main: [lr: 0.001, batch_size: 16]
+
 early_stop: [min_delta: 0.001, patience: 2000]
 
 Epoch 7733/20000
