@@ -1,0 +1,5 @@
+name,type,minHP,maxHp,hpGrowth,minMP,maxMp,mpGrowth,minStr,maxStr,strGrowth,minMag,maxMag,magGrowth,minEnd,maxEnd,endGrowth,minSpd,maxSpd,spdGrowth,minLuck,maxLuck,luckGrowth
+Knight 3,0,264,660,4,72,270,2,1,95,0.94,1,20,0.19,1,85,0.84,1,30,0.29,1,40,0.39
+Priest 3,1,250,547,3,165,561,4,1,53,0.52,1,77,0.76,1,67,0.66,1,49,0.48,1,47,0.46
+Assassin 3,2,257,455,2,105,303,2,1,73,0.72,1,41,0.4,1,60,0.59,1,87,0.86,1,91,0.9
+Magician 3,3,267,465,2,167,563,4,1,45,0.44,1,88,0.87,1,56,0.55,1,71,0.7,1,61,0.6
