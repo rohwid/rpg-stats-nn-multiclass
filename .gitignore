@@ -85,8 +85,7 @@ checkpoint
 htmlcov
 mnist
 
-# PyCharm
-.idea/
+# PyCharm virtualenv
 venv/*
 
 # OS junk files
@@ -97,3 +96,9 @@ venv/*
 cuda_*
 cudnn-*
 nccl_*
+
+# PyCharm config
+.idea/*
+
+# VSCode config
+.vscode/*
